@@ -1,0 +1,13 @@
+<div class="col">
+    <h3>Buscar:</h3>
+    <input type="text" class="form-control" placeholder="Busca tu Gifs y Presiona Enter..." (keyup.enter)="buscar()"
+        #txtBuscar>
+    <div *ngIf="mensaje === ''; else validacion">
+
+    </div>
+    <ng-template #validacion>
+        <div class="py-4">
+            <span class="d-block alert-danger text-center p-3">{{mensaje}}</span>
+        </div>
+    </ng-template>
+</div>

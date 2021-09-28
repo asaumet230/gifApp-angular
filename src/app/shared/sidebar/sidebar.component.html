@@ -1,0 +1,15 @@
+<div>
+    <h3 class="text-light">Gifs-App</h3>
+    <hr class="text-white">
+    <br>
+    <div class="list-group list-reset " *ngFor="let termino of historial">
+        <a href="#" class="list-group-item list-group-item-action my-1" (click)="buscar(termino)">{{termino |
+            titlecase}}</a>
+    </div>
+
+
+    <button class="d-block mx-auto btn btn-success mt-3" (click)="borrarUltimo()">Borrar ultima Busqueda</button>
+    <button class="d-block mx-auto btn btn-danger mt-3" (click)="borrarTodo()">Borrar Todo</button>
+
+
+</div>
